@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -51,7 +52,83 @@
               >
             </li>
           </ul>
+          <button type="button" data-menu-open class="menu-open">
+            <svg class="icon-menu-open" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
         </address>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-mob-menu">
+          <div class="first">
+            <button type="button" data-menu-close class="menu-close">
+              <svg class="icon-menu-open" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-icon"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second">
+            <ul class="list mob-menu-address-list">
+              <li>
+                <a class="mob-menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="team-soc-list-mob list">
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -126,7 +203,8 @@
           <ul class="doing-list list">
             <li class="doing-item">
               <img
-                src="./images/img1.jpg"
+                srcset="./images/doing-1.jpg 1x, ./images/doing-1@2x.jpg 2x"
+                src="./images/doing-1.jpg"
                 alt="Desktop"
                 width="360"
                 height="300"
@@ -134,7 +212,8 @@
             </li>
             <li class="doing-item">
               <img
-                src="./images/img2.jpg"
+                srcset="./images/doing-2.jpg 1x, ./images/doing-2@2x.jpg 2x"
+                src="./images/doing-2.jpg"
                 alt="Phone"
                 width="360"
                 height="300"
@@ -142,7 +221,8 @@
             </li>
             <li class="doing-item">
               <img
-                src="./images/img3.jpg"
+                srcset="./images/doing-3.jpg 1x, ./images/doing-3@2x.jpg 2x"
+                src="./images/doing-3.jpg"
                 alt="Phone with desktop"
                 width="360"
                 height="300"
@@ -158,8 +238,9 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 class="team-img"
-                src="./images/img11.jpg"
+                src="./images/team-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -201,8 +282,9 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 class="team-img"
-                src="./images/img22.jpg"
+                src="./images/team-2.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -244,8 +326,9 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 class="team-img"
-                src="./images/img33.jpg"
+                src="./images/team-3.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -287,8 +370,9 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 class="team-img"
-                src="./images/img44.jpg"
+                src="./images/team-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -457,9 +541,9 @@
               required
             />
             <label for="policy" class="check-text"
-              >I accept the terms and conditions of the&nbsp
-              <a class="privacy-policy" href="#">Privacy Policy</a></label
-            >
+              >"I accept the terms and conditions of the "
+              <a class="privacy-policy" href="#">Privacy Policy</a>
+            </label>
           </div>
 
           <button class="modal-button" type="submit">Send</button>
@@ -538,5 +622,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

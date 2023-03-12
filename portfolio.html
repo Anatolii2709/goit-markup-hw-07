@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
@@ -35,7 +36,9 @@
                 >Portfolio</a
               >
             </li>
-            <li><a class="header-item link" href="#">Contacts</a></li>
+            <li>
+              <a class="header-item link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address>
@@ -51,7 +54,81 @@
               >
             </li>
           </ul>
+          <button type="button" data-menu-open class="menu-open">
+            <svg class="icon-menu-open" width="32" height="22">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
         </address>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-mob-menu">
+          <div class="first">
+            <button type="button" data-menu-close class="menu-close">
+              <svg class="icon-menu-open" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-icon"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-li">
+                <a class="mob-menu-item link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second">
+            <ul class="list mob-menu-address-list">
+              <li>
+                <a class="mob-menu-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="team-soc-list-mob list">
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-soc-item">
+                <a class="team-soc-link link" href="">
+                  <svg class="team-soc-icon" width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -80,11 +157,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
+                    srcset="./images/galery1.jpg 1x, ./images/galery1@2x.jpg 2x"
                     class="image"
-                    src="./images/imgp.jpg"
+                    src="./images/galery1.jpg"
                     alt="BankApp"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -105,10 +183,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(1).jpg"
+                    srcset="./images/galery2.jpg 1x, ./images/galery2@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery2.jpg"
                     alt="Payment"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -127,10 +207,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(2).jpg"
+                    srcset="./images/galery3.jpg 1x, ./images/galery3@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery3.jpg"
                     alt="Laptop and phone"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -149,10 +231,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(3).jpg"
+                    srcset="./images/galery4.jpg 1x, ./images/galery4@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery4.jpg"
                     alt="Taxi"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -171,10 +255,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(4).jpg"
+                    srcset="./images/galery5.jpg 1x, ./images/galery5@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery5.jpg"
                     alt="Screen Illustrations"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -193,10 +279,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(5).jpg"
+                    srcset="./images/galery6.jpg 1x, /images/galery6@2x.jpg 2x"
+                    class="image"
+                    src="/images/galery6.jpg"
                     alt="happy girl"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -215,10 +303,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(6).jpg"
+                    srcset="./images/galery7.jpg 1x, ./images/galery7@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery7.jpg"
                     alt="Stories"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -237,10 +327,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(7).jpg"
+                    srcset="./images/galery8.jpg 1x, ./images/galery8@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery8.jpg"
                     alt="fruit in a bag"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -259,10 +351,12 @@
               <a class="project-item-link link" href="">
                 <div class="project-cover-wrap">
                   <img
-                    src="./images/imgp(8).jpg"
+                    srcset="./images/galery9.jpg 1x, ./images/galery9@2x.jpg 2x"
+                    class="image"
+                    src="./images/galery9.jpg"
                     alt="Coffee"
-                    width="360"
-                    height="300"
+                    width="396"
+                    height="280"
                   />
                   <p class="project-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -352,5 +446,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
