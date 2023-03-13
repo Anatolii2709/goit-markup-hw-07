@@ -6,6 +6,7 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 0px) and (max-width: 418px) {
   .team-soc-list-mob {
     gap: 25px;
@@ -102,7 +103,7 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.04em;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -120,10 +121,19 @@
     margin-bottom: 0;
     margin-right: 120px;
   }
+  .container.header-container {
+    padding-bottom: 0px;
+  }
   /* -----------------------header---------------------- */
-
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+  }
   .modal {
     padding: 24px;
+    max-width: 408px;
   }
   .modal-close {
     margin-right: 0;
@@ -132,6 +142,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
+  }
+  .features-item {
+    width: 356px;
+    height: 120px;
   }
   .features-text {
     max-width: 350px;
@@ -163,18 +177,40 @@
   .customers-title-list {
     gap: 72px 24px;
   }
+  .customers-title-item {
+    width: 168px;
+  }
 
-  .footer-logo {
+  .footer > .container {
+    padding-top: 96px;
+    padding-right: 164px;
+    padding-bottom: 96px;
+    padding-left: 108px;
+  }
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .footer {
     margin-left: 0;
   }
+  .footer-text {
+    margin-bottom: 0;
+  }
+
   .social-media {
     margin-left: 0;
   }
   .social-media-content {
-    margin-left: 24px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   .footer-logo-ap {
-    margin-left: 108px;
+  }
+  .subscribe {
+    margin-left: 0;
   }
   .subscribe-text {
     margin-left: 0;
@@ -185,12 +221,12 @@
   .email-button {
     gap: 24px;
   }
-  .subscribe {
-    margin-left: 108px;
-  }
   .footer {
+    padding-top: 0;
+    padding-bottom: 0;
     justify-content: start;
   }
+
   .filter {
     justify-content: center;
     margin-top: 64px;
@@ -221,10 +257,16 @@
     padding-right: 15px;
   }
 
+  .header {
+    padding-top: 0;
+  }
   .header-logo {
     margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
   .header-item {
+    padding-top: 24px;
     padding-bottom: 28px;
   }
   .address-list {
@@ -237,7 +279,8 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 28px;
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
   .header-mail {
     font-style: normal;
@@ -245,8 +288,8 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 28px;
-    padding-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
   .about {
     padding-top: 120px;
@@ -262,7 +305,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    padding-top: 8px;
+    margin-top: 8px;
   }
   .features-text {
     font-weight: 400;
@@ -278,7 +321,7 @@
     gap: 24px;
   }
   .customers-title {
-    padding-top: 120px;
+    margin-top: 120px;
   }
   .customers-title-list {
     padding-bottom: 120px;
@@ -287,10 +330,16 @@
   .social-media-content {
     margin-right: 0;
   }
+  .footer > .container {
+    padding: 0 16px;
+  }
   .footer {
     flex-wrap: nowrap;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .footer-flex {
+    gap: 0;
   }
   .subscribe {
     margin-left: 80px;
@@ -304,6 +353,7 @@
   }
   .footer-logo-ap {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .filter {

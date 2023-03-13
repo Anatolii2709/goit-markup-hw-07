@@ -39,7 +39,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
+.container.header-container {
+  padding-bottom: 24px;
+}
 .header {
   padding-top: 24px;
 
@@ -68,7 +70,6 @@ body {
   text-transform: uppercase;
   color: var(--color-brand);
   margin-right: 76px;
-  margin-bottom: 16px;
 }
 .header-logo .color {
   color: var(--color-text-title);
@@ -104,7 +105,6 @@ body {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid #404bbf;
 }
 .mob-menu {
   position: fixed;
@@ -128,7 +128,6 @@ body {
   background-color: transparent;
   margin-right: 0;
   padding: 0;
-  margin-top: -4px;
 }
 .mob-menu-list {
   margin-bottom: 36px;
@@ -230,7 +229,7 @@ body {
 }
 
 .hero-btn {
-  max-width: 169px;
+  width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
@@ -307,7 +306,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .doing {
   padding-bottom: 120px;
@@ -351,7 +350,7 @@ body {
 }
 
 .team-item {
-  max-width: 260px;
+  max-width: 264px;
   flex-basis: calc((100% - 24px * 3) / 4);
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -419,8 +418,8 @@ body {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-top: 96px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -434,7 +433,7 @@ body {
 }
 
 .customers-title-item {
-  width: 168px;
+  width: 190px;
   height: 88px;
 }
 
@@ -463,21 +462,21 @@ body {
 }
 
 /* ------- footer ----- */
-.background-footer {
-  background-color: var(--color-text-title);
-}
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding-top: 96px;
   padding-bottom: 96px;
+  background-color: var(--color-text-title);
+}
+.footer {
+  background-color: var(--color-text-title);
 }
 
 .footer-logo-ap {
   display: block;
   max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-text {
@@ -534,6 +533,7 @@ body {
 .social-media-list {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .social-media-item {
 }
@@ -778,8 +778,8 @@ body {
 
 .modal {
   width: 100%;
-  max-width: 408px;
-  min-height: 584px;
+  max-width: 392px;
+  height: 586px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -833,7 +833,7 @@ body {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .input-wrap {
