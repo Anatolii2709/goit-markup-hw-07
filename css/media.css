@@ -85,7 +85,7 @@
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--color-text);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -145,7 +145,6 @@
   }
   .features-item {
     width: 356px;
-    height: 120px;
   }
   .features-text {
     max-width: 350px;
@@ -297,6 +296,7 @@
   }
   .features-list {
     display: flex;
+    gap: 24px;
   }
   .features-item {
     max-width: 264px;
@@ -309,6 +309,7 @@
   }
   .features-text {
     font-weight: 400;
+    padding-bottom: 0;
   }
 
   .team {
@@ -316,15 +317,13 @@
     padding-bottom: 120px;
   }
 
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .customers-title-list {
     flex-wrap: nowrap;
     gap: 24px;
-  }
-  .customers-title {
-    margin-top: 120px;
-  }
-  .customers-title-list {
-    padding-bottom: 120px;
   }
 
   .social-media-content {
@@ -343,6 +342,10 @@
   }
   .subscribe {
     margin-left: 80px;
+  }
+  .subscribe-text {
+    text-align: left;
+    margin-right: 0;
   }
   .email-button {
     justify-content: flex-start;
