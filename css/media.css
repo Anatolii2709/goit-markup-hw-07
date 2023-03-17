@@ -148,7 +148,7 @@
   }
   .features-text {
     max-width: 350px;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .features-subtitle {
     max-width: 264px;
@@ -310,7 +310,6 @@
   }
   .features-text {
     font-weight: 400;
-    padding-bottom: 0;
   }
 
   .team {
